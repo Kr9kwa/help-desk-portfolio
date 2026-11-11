@@ -28,7 +28,7 @@
 - Confirmed the department OU and security group exist:
   `KIRGLOBALICT > Users > Marketing` with group `Marketing-Users`
 
-![OU structure](screenshots/01-ou-structure.png)
+![OU structure](01-ou-structure.png)
 
 ---
 
@@ -44,7 +44,7 @@
 | Temporary password | set per policy |
 | User must change password at next logon | ☑ enabled |
 
-![New user — password options](screenshots/02-new-user-password.png)
+![New user — password options](02-new-user-password.png)
 
 ### 2. Fill in employee details
 **Properties → General / Organization**
@@ -56,12 +56,12 @@
 | Company | KirGlobal |
 | E-mail | ecarter@kirglobal.com |
 
-![Organization tab](screenshots/03-organization-tab.png)
+![Organization tab](03-organization-tab.png)
 
 ### 3. Grant access via security group
 **Properties → Member Of → Add** → `Marketing-Users`
 
-![Member Of tab](screenshots/04-member-of.png)
+![Member Of tab](04-member-of.png)
 
 ---
 
@@ -85,14 +85,14 @@ DistinguishedName : CN=Emily Carter,OU=Marketing,OU=Users,OU=KIRGLOBALICT,DC=kir
 MemberOf          : {CN=Marketing-Users,OU=Marketing,OU=Users,OU=KIRGLOBALICT,DC=kirglobal,DC=com}
 ```
 
-![Get-ADUser output](screenshots/05-get-aduser.png)
+![Get-ADUser output](05-get-aduser.png)
 
 ### Login test on domain-joined client
 - Signed in on the Windows 11 client as `kirglobal\ecarter`
 - User was prompted to change the temporary password ✅
 - `whoami` confirms the domain session
 
-![whoami](screenshots/06-whoami.png)
+![whoami](06-whoami.png)
 
 ---
 
