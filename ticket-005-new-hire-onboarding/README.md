@@ -8,7 +8,7 @@
 | **Requested by** | HR Department |
 | **Assigned to** | Kirill Baev (IT Support, Tier 1) |
 | **Status** | ✅ Resolved |
-| **Environment** | Windows Server 2022 (DC011), Active Directory (`kirglobal.com`), Windows 11 client |
+| **Environment** | Windows Server 2022 (DC011), Active Directory (`kirglobal.com`), Windows 10 client |
 
 ---
 
@@ -88,7 +88,7 @@ MemberOf          : {CN=Marketing-Users,OU=Marketing,OU=Users,OU=KIRGLOBALICT,DC
 ![Get-ADUser output](05-get-aduser.png)
 
 ### Login test on domain-joined client
-- Signed in on the Windows 11 client as `kirglobal\ecarter`
+- Signed in on the Windows 10 client as `kirglobal\ecarter`
 - User was prompted to change the temporary password ✅
 - `whoami` confirms the domain session
 
